@@ -1,4 +1,4 @@
-# Ducky 60% Keyboard One2Mini - Adds Arrow key functionality
+# Ducky (60%) Keyboard One2Mini - Adds Arrow key functionality
 :smile: Converts the bottom-right of the keyboard into arrow keys for a Ducky One2Mini 60% keyboard. :smile:
 
 Written for Windows 10, but will likely work on other versions as well.
