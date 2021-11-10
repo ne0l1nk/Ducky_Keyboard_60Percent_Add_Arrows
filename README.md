@@ -4,11 +4,13 @@
 Written for Windows 10, but will likely work on other versions as well.
 
 ## Instructions:
-1. The most recent models of the Ducky One2Mini keyboard no longer use any of the 4 tiny switches on the underside of the keyboard to modify the lower-right-row key bindings. Those key bindings are now changed by triggering a certain mode by pressing ***fn + alt + k*** for ***5 seconds*** as explained in the image taken from the keyboard's user manual. Once in that mode (and you will know you're in a different mode based on the lighting on the keyboard), you'll then press two keys at a time to switch them. You'll know you were successful when the colors switch. The order you do this will be the following:
+1. The most recent models of the Ducky One2Mini keyboard allow the lower-right-row key bindings to be configured using a predesigned activatable mode. Those key bindings are now changed by triggering a certain mode by pressing ***fn + alt + k*** for ***5 seconds*** as explained in the image taken from the keyboard's user manual. Once in that mode (and you will know you're in a different mode based on the lighting on the keyboard), you'll then press two keys at a time to switch them. You'll know you were successful when the colors switch. The order you do this will be the following:
    1. Press fn + alt + k for 5 seconds to enter remap mode
    1. Press **fn** & **win** keys at the same time (assuming original config)
    1. Press **win** & **alt** keys at the same time (assuming original config)
    1. Once finished, press the **esc** key to end the mode
+
+Note: It's possible to do the same thing by setting the dip switch 2 to the ON position (on the bottom of the keyboard), if indeed this was the 1st dip switch on previous models.  I have not yet tested it...
 
 ![ducky01](https://user-images.githubusercontent.com/13490669/141013705-64b01dca-174b-413e-90bb-73b312f83585.png)
 
