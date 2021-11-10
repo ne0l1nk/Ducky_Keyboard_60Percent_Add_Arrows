@@ -13,7 +13,7 @@ RControl::Send {RIGHT}
 ;Mimics up-arrow when quickly pressed, or normal shift functionality when held.
 ;Todo: Enable holding shift and pressing down arrow for highlighting.
 $RShift::
-KeyWait, RShift, T0.033 ;adjust this to define the timing of an rshift key press.
+KeyWait, RShift, T0.05 ;adjust this to define the timing of an rshift key press.
 RShiftHeldDown:= GetKeyState("RShift","P")
 ;Msgbox RShiftHeldDown: %RShiftHeldDown%
 If (RShiftHeldDown) {
