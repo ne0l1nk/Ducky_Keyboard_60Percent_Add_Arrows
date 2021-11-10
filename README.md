@@ -10,7 +10,7 @@ Written for Windows 10, but will likely work on other versions as well.
    1. Press **win** & **alt** keys at the same time (assuming original config)
    1. Once finished, press the **esc** key to end the mode
 
-Note: It's possible to do the same thing by setting the dip switch 2 to the ON position (on the bottom of the keyboard), if indeed this was the 1st dip switch on previous models.  I have not yet tested it...
+**Note:** It's possible to do the same thing by setting the dip switch 2 to the ON position (on the bottom of the keyboard), if indeed this was the 1st dip switch on previous models.  I have not yet tested it...
 
 ![ducky01](https://user-images.githubusercontent.com/13490669/141013705-64b01dca-174b-413e-90bb-73b312f83585.png)
 
