@@ -1,28 +1,28 @@
-;Script written by Jason Nickle on 2021-11-08 [Version 1.0]
+;Script written by Jason Nickle on 2021-11-08 [Version 1.1]
 ;AHK version 1.1.33.10
 ;Purpose: (60% Keyboard) Add arrow keys to the 'Ducky One2Many' keyboard.
-#KeyHistory 0
+#KeyHistory 2 ;This must be >= 2 in order for A_PriorKey to function properly.
 #SingleInstance Force
 #MaxThreads 10
 #InstallKeybdHook
-RAlt::Send {LEFT}
-RWin::Send {DOWN}
-RControl::Send {RIGHT}
+RAlt::Left
+RWin::Down
+RCtrl::Right
 ;-------------------------------------------------------------------------------------
-;Credits: ilhom @ https://www.autohotkey.com/boards/viewtopic.php?t=68063
+;RShift::Up
 ;Mimics up-arrow when quickly pressed, or normal shift functionality when held.
-;Todo: Enable holding shift and pressing down arrow for highlighting.
 $RShift::
-KeyWait, RShift, T0.05 ;adjust this to define the timing of an rshift key press.
-RShiftHeldDown:= GetKeyState("RShift","P")
-;Msgbox RShiftHeldDown: %RShiftHeldDown%
-If (RShiftHeldDown) {
-	Send {Shift Down}
-	KeyWait, RShift
-	Send {Shift Up}
-} Else {
-	Send {Shift Up} ;Fixes an issue at certain timings where rshift remains pressed.
-	Send {Up}
-}
-Return
+	KeyWait, RShift, T0.06 ;This timing allows for differentiation between key press and hold.
+	RShiftHeldDown:= GetKeyState("RShift","P")
+	if (RShiftHeldDown) {
+	    Send {Shift Down}
+	    KeyWait, RShift
+	    Send {Shift Up}
+	}
+return
+RShift Up::
+	if (A_PriorKey = "RShift") {
+		SendInput {Up}
+	}
+return
 ;-------------------------------------------------------------------------------------
